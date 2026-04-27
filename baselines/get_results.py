@@ -108,12 +108,7 @@ def get_settings(output_dir, task_name):
 
 
 def round_to_n(x, n=3):
-    if pd.isnull(x):
-        return np.nan
-    elif x == 0:
-        return 0
-    else:
-        return np.round(x, -(np.floor(np.log10(x))).astype(int) + (n - 1))
+    pass
 
 
 def plot_confusion(confusion_mat, save_plots=False, ax=None):
